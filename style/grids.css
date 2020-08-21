@@ -1,0 +1,88 @@
+*{
+    --background: rgba(17, 19, 20, 1);
+    --background-hover: rgba(17, 19, 20, 0.5);
+    --font: rgba(119, 198, 153, 1);
+    --font-hover: rgba(119, 198, 153, 0.5);
+    --select: rgba(165, 99, 119, 1);
+    --selec-hover: rgba(165, 99, 119, 0.5);
+    --details: rgba(102, 102, 102, .5);
+    --details-hover: rgba(102, 102, 102, 0.25);
+    --subtitles: rgba(134, 117, 117, 1);
+    --subtitles-hover: rgba(134, 117, 117, 0.5);
+}
+*, font{
+    color: var(--font);
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr; /*5 colunas e a proporção de cada coluna*/
+    grid-template-rows: 14vh 2vh 200vh 10vh 5vh;    /*4 linhas e espaçamento de cada linha */
+    grid-template-areas:
+    ". logo logo search ."
+    ". . .  information ."
+    ". main side-bar recommended ."
+    ". navigate . . . "
+    ". help . . .";
+    gap: 0.5vw;
+}
+.header{
+    grid-area: logo;
+    transition: background 1s;
+}
+.header:hover{
+    background-color: var(--background-hover);;
+}
+.search{
+    grid-area: search;
+    transition: background 1s;
+}
+.search:hover{
+    background-color: var(--background-hover);;
+}
+.information{
+    grid-area: information;
+    transition: background 1s;
+}
+.information:hover{
+    background-color: var(--background-hover);;
+}
+.content{
+    grid-area: main;
+    transition: background 1s;
+}
+.content:hover{
+    background-color: var(--background-hover);;
+}
+.side-bar{
+    grid-area: side-bar;
+    transition: background 1s;
+}
+.side-bar:hover{
+    background-color: var(--background-hover);;
+}
+.recommended{
+    grid-area: recommended;
+    transition: background 1s;
+}
+.recommended:hover{
+    background-color: var(--background-hover);;
+}
+.navigate{
+    grid-area: navigate;
+    transition: background 1s;
+}
+.navigate:hover{
+    background-color: var(--background-hover);;
+}
+.about{
+    grid-area: help;
+    transition: background 1s;
+}
+.about:hover{
+    background-color: var(--background-hover);
+}
