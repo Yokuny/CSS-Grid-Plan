@@ -34,19 +34,21 @@
 .information .information-buttons{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    margin-left: 30%;
+    justify-content: space-around;
     margin-right: 2vw;
 }
 .information .information-buttons a{
-    height: 2vh;
     text-decoration: none;
-    font-size: 1.5vh;
-    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4vh;
+    letter-spacing: 0.04vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 2vh;
     color: var(--select);
-    transition: 0.3s;
+    transition: color 300ms, background-color 300ms;
 }
 .information .information-buttons a:hover{
-    background-color: var(--select);
     color: var(--background);
+    background-color: var(--select);
 }

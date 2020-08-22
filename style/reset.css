@@ -19,6 +19,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+* {
+	outline: none;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -39,6 +42,21 @@ q:before, q:after {
 	content: none;
 }
 table {
-	border-collapse: collapse;
 	border-spacing: 0;
+	border: 1px solid; 
+	width: 100%;
+}
+tr th {
+	border-bottom: 1px solid;
+	text-align: left;
+}
+tr th, tr td { 
+	padding: 9px 20px;
+	border-right: 1px solid;
+}
+tr th:last-child, tr td:last-child {
+	border-right: 0px;
+}
+table th {
+	font-weight: bold;
 }
