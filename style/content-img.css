@@ -1,0 +1,12 @@
+main .box-content{
+    
+}
+main .box-content .content-img{
+    margin-top: 1.4vh;
+    width: 20vh;
+    position: relative;
+}
+main .box-content .content-img img{
+    width: 53vh;
+    height: auto;
+}
