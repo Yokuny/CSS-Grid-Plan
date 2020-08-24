@@ -1,0 +1,17 @@
+.container .content .footer-content .job-comment{
+    box-sizing: content-box;
+    display: inline;
+}
+.container .content .footer-content .job-comment h2{
+    margin-top: 2%;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.4vh;
+    line-height: 2vh;
+    letter-spacing: normal;
+    font-family: Verdana, "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+    transition: color 300ms;
+}
+.container .content .footer-content .job-comment h2:hover{
+    color: var(--font-hover)
+}

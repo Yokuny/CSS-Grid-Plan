@@ -1,12 +1,12 @@
 main .box-content{
-    
+    display: grid;
 }
 main .box-content .content-img{
     margin-top: 1.4vh;
-    width: 20vh;
+    width: 1fr;
     position: relative;
 }
 main .box-content .content-img img{
-    width: 53vh;
+    width: 54vh;
     height: auto;
 }

@@ -1,0 +1,64 @@
+.container .content .job-comment-buttons{
+    margin-top: 2vh;
+}
+.container .content .job-comment-buttons .page-buttons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "comment like";
+    gap: 7.8vw;
+}
+.container .content .job-comment-buttons .page-buttons .comment{
+    grid-area: comment;
+}
+.container .content .job-comment-buttons .page-buttons .like{
+    grid-area: like;
+}
+.container .content .job-comment-buttons .page-buttons .comment-like{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--select);
+    height: 5vh;
+    width: 10vw;
+    background-color: var(--details);
+    border: none;
+    transition: color 300ms, background-color 300ms;
+}
+.container .content .job-comment-buttons .page-buttons .comment-like:hover{
+    color: var(--background);
+    background-color: var(--details-hover);
+}
+/* Socail burrons */
+.container .content .job-comment-buttons .social-buttons{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-areas: "facebook twitter";
+}
+.container .content .job-comment-buttons .facebook{
+    grid-area: facebook;
+}
+.container .content .job-comment-buttons .twitter{
+    grid-area: twitter;
+}
+.container .content .job-comment-buttons .social-buttons .facebook-twitter{
+    margin-top: 2vh;
+    height: 1vh;
+    width: 3vw;
+    border: none;
+    transition: color 300ms, background-color 300ms;
+    margin-bottom: 10vh;
+}
+.container .content .job-comment-buttons .social-buttons .facebook button{
+    background-color: rgba(66,103,178, 1);
+}
+.container .content .job-comment-buttons .social-buttons .facebook button:hover{
+    background-color: rgba(66,103,178, .5);
+}
+.container .content .job-comment-buttons .social-buttons .twitter button{
+    background-color: rgb(29,161,242, 1);
+}
+.container .content .job-comment-buttons .social-buttons .twitter button:hover{
+    background-color: rgb(29,161,242, .5);
+}
