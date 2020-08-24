@@ -10,3 +10,6 @@ main .box-content .content-img img{
     width: 54vh;
     height: auto;
 }
+iframe{
+    margin-top: 1.4vh;
+}
